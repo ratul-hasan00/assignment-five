@@ -110,7 +110,7 @@
 
   .second-btn-primary:hover{
     cursor: pointer;
-    background-color:  rgb(187, 186, 186);
-    color: black;
+    background-color: black;
+    color: white;
   }
 
