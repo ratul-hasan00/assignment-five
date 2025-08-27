@@ -14,7 +14,7 @@
 
   .nav-container{
    margin-left: 5px;
-    margin-right: 70px;
+    margin-right: 5px;
   }
   .nav-img{
     height: 40px;
@@ -74,5 +74,43 @@
 
   .banner-container{
     width: 100%;
+    height: 350px;
   }
 }
+
+/* card section  */  /* card section  */ /* card section  */
+
+@media screen and (max-width: 576px){
+  .card-main-div{
+     display: grid;
+    grid-template-columns: repeat(1,1fr);
+
+  }
+  .card-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin: auto;
+  }
+  .card-history{
+    width: 280px;
+    height: 100%;
+    margin: auto;
+  }
+}
+
+ /* common section  */ /* common section  */ /* common section  */ 
+
+
+
+  .btn-primary:hover{
+    cursor: pointer;
+    background-color: rgb(131, 184, 151);
+    color: black;
+  }
+
+  .second-btn-primary:hover{
+    cursor: pointer;
+    background-color:  rgb(187, 186, 186);
+    color: black;
+  }
+
