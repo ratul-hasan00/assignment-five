@@ -4,3 +4,75 @@
   font-weight: 400;
   font-style: normal;
 }
+
+/* responsive for mobile here */
+
+/* nav section  */  /* nav section  */ /* nav section  */  
+
+
+@media screen and (max-width: 576px){
+
+  .nav-container{
+   margin-left: 5px;
+    margin-right: 70px;
+  }
+  .nav-img{
+    height: 40px;
+  }
+  .nav-text{
+    font-size: 14px;
+  }
+/* nav btn section  */
+  .nav-btn-section{
+    gap:4px;
+  }
+  /* nav btn one */
+
+  .nav-btn-one{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    gap: 3px;
+  }
+  .nav-btn-one-img{
+    height: 17px;
+  }
+  .nav-btn-text{
+    font-size: 14px;
+  }
+
+
+  /* nav btn two */
+
+
+  .nav-btn-two{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    gap: 3px;
+  }
+  .nav-btn-two-img{
+    height: 17px;
+  }
+
+  /* nav btn three  */
+
+  .nav-btn-three{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    gap: 3px;
+  }
+}
+
+/* banner section  */  /* banner section  */ /* banner section  */
+
+@media screen and (max-width: 576px){
+
+  .banner-container{
+    width: 100%;
+  }
+}
