@@ -15,8 +15,8 @@ for (const heart of heartTouch) {
 
 // by clicking call buttton the coin will decrease here
 
-const coinCount = document.getElementById("coin-count") ;
-const callBtn = document.getElementsByClassName("call-btn") ;
+let coinCount = document.getElementById("coin-count") ;
+let callBtn = document.getElementsByClassName("call-btn") ;
 
 for (const call of callBtn) {
    call.addEventListener("click", function() {
@@ -30,9 +30,9 @@ for (const call of callBtn) {
          let coinLeft = coinDigit - 20 ;
          coinCount.innerText = coinLeft ;
 
-         const card = call.closest(".card") ;
-         const name = card.querySelector(".name").innerText ;
-         const number = card.querySelector(".number").innerText ;
+         let card = call.closest(".card") ;
+         let name = card.querySelector(".name").innerText ;
+         let number = card.querySelector(".number").innerText ;
 
          alert(`📞 Calling ${name} ${number}...`);
       }
@@ -43,4 +43,36 @@ for (const call of callBtn) {
 
    })
 }
+
+// by clicking copy buttton the copy count will increase here
+
+let copyCount = document.getElementById("copy-count") ;
+let copyBtn = document.getElementsByClassName("copy-btn") ;
+
+for (const copy of copyBtn){
+   copy.addEventListener('click', function(){
+
+      let copyText = copyCount.innerText ;
+      let copyDigit = parseInt(copyText) ;
+      let totalCopy = copyDigit + 1 ;
+      copyCount.innerText = totalCopy ;
+
+      let cardCopy = copy.closest(".card") ;
+      let numberCopy = cardCopy.querySelector(".number").innerText ;
+
+      navigator.clipboard.writeText(numberCopy)
+      
+      .then(() => {
+         alert (`Number copied to clipboard: ${numberCopy}`) ;
+      })
+
+      .catch(err => {
+         console.error('Failed to copy text: ', err) ;
+      })
+
+   }
+   
+   )
+}
+
          
